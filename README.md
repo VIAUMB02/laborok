@@ -1,6 +1,6 @@
 # Mobilszoftver laboratórium
 
-![Build docs](https://github.com/viaumb02/laborok/workflows/Build%20docs/badge.svg?branch=master)
+![Build docs](https://github.com/viaumb02/laborok/workflows/Build%20docs/badge.svg?branch=main)
 
 [BMEVIAUMB02 - Mobilszoftver laboratórium](https://www.aut.bme.hu/Course/VIAUMB02) tárgy laborfeladatai.
 
