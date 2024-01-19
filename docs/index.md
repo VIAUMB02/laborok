@@ -28,7 +28,7 @@ A laborok megoldását egy személyre szóló git repository-ban kell beadni. En
 
 ### Laborok értékelése
 
-Minden labort külön jeggyel értékelünk. A teljesítés feltétele a határidőig történő beadás. A jegy (1-5 skálán) a labor feladatokon megszerezhető 5 pont alapján történik. A feladatok beadásához minden esetben a GitHub platformot használjuk. 
+Minden labort 100 pontos skálán értékelünk, a laborútmutatók végén található leírás alapján. A teljesítés feltétele a határidőig történő beadás. A feladatok beadásához minden esetben a GitHub platformot használjuk. 
 
 A feladatok kiértékelése egyes laborok esetén részben **automatikusan** történik. A futtatható kódokat valóban le fogjuk futtatni, ezért minden esetben fontos a feladatleírások pontos követése (kiinduló kód váz használata, csak a megengedett fájlok változtatása, stb.)!
 
@@ -36,7 +36,7 @@ A kiértékelés eredményéről a GitHub-on kapsz szöveges visszajelzést (lá
 
 ## Képernyőképek
 
-A laborok kérik, hogy készíts képernyőképet a megoldás egy-egy részéről. Ez különösen akkor fontos, ha a feladatot otthon készíted el, mert ezzel bizonyítod, hogy a megoldásod saját magad készítetted. **A képernyőképek elvárt tartalmát a feladat minden esetben pontosan megnevezi**. A képernyőkép készülhet a teljes desktopról is, de lehet csak a kért alkalmazásról készíteni.
+A laborok többször kérik, hogy készíts képernyőképet a megoldás egy-egy részéről. Ez különösen akkor fontos, ha a feladatot otthon készíted el, mert ezzel bizonyítod, hogy a megoldásod saját magad készítetted. **A képernyőképek elvárt tartalmát a feladat minden esetben pontosan megnevezi**. A képernyőkép készülhet a teljes desktopról is, de lehet csak a kért alkalmazásról készíteni.
 
 !!! info ""
     A képernyőképeket a megoldás részeként kell beadni, így felkerülnek a git repository tartalmával együtt. Mivel a repository privát, azt az oktatókon kívül más nem látja. Amennyiben olyan tartalom kerül a képernyőképre, amit nem szeretnél feltölteni, kitakarhatod a képről.
