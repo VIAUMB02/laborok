@@ -21,7 +21,7 @@
     
     
       
-        <title>Android 1 - Architektúra és környezet - BMEVIAUMB02 - Mobilszoftver laboratórium laborfeladatok</title>
+        <title>Android 2 - Architektúra és környezet - BMEVIAUMB02 - Mobilszoftver laboratórium laborfeladatok</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#android-1-architektura-es-kornyezet" class="md-skip">
+        <a href="#android-2-architektura-es-kornyezet" class="md-skip">
           Kihagyás
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Android 1 - Architektúra és környezet
+              Android 2 - Architektúra és környezet
             
           </span>
         </div>
@@ -454,12 +454,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Android 1 - Architektúra és környezet
+          Android 2 - Architektúra és környezet
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Android 1 - Architektúra és környezet
+        Android 2 - Architektúra és környezet
       </a>
       
         
@@ -478,8 +478,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bevezetes" class="md-nav__link">
-    Bevezetés
+  <a href="#celkituzes" class="md-nav__link">
+    Célkitűzés
   </a>
   
 </li>
@@ -501,13 +501,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#celkituzes" class="md-nav__link">
-    Célkitűzés
-  </a>
   
 </li>
       
@@ -534,7 +527,7 @@
   
     <li class="md-nav__item">
       <a href="../A03/" class="md-nav__link">
-        Labor10 - Időzítés és értesítések (Alarm)
+        Android 3 - Hálózat és adatbázis
       </a>
     </li>
   
@@ -548,7 +541,7 @@
   
     <li class="md-nav__item">
       <a href="../A04/" class="md-nav__link">
-        Labor10 - Időzítés és értesítések (Alarm)
+        Android 3 - Hálózat és adatbázis
       </a>
     </li>
   
@@ -562,7 +555,7 @@
   
     <li class="md-nav__item">
       <a href="../A05/" class="md-nav__link">
-        Labor10 - Időzítés és értesítések (Alarm)
+        Android 3 - Hálózat és adatbázis
       </a>
     </li>
   
@@ -602,8 +595,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bevezetes" class="md-nav__link">
-    Bevezetés
+  <a href="#celkituzes" class="md-nav__link">
+    Célkitűzés
   </a>
   
 </li>
@@ -625,13 +618,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#celkituzes" class="md-nav__link">
-    Célkitűzés
-  </a>
   
 </li>
       
@@ -660,9 +646,9 @@
   
 
 
-<h1 id="android-1-architektura-es-kornyezet">Android 1 - Architektúra és környezet<a class="headerlink" href="#android-1-architektura-es-kornyezet" title="Permanent link">&para;</a></h1>
-<h2 id="bevezetes">Bevezetés<a class="headerlink" href="#bevezetes" title="Permanent link">&para;</a></h2>
-<p>elen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. </p>
+<h1 id="android-2-architektura-es-kornyezet">Android 2 - Architektúra és környezet<a class="headerlink" href="#android-2-architektura-es-kornyezet" title="Permanent link">&para;</a></h1>
+<h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
+<p>Jelen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. </p>
 <p>Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a fragment) megfelelő definiálása. </p>
 <p>További cél az alkalmazás fejlesztéséhez használt Git verziókezelő és Continuous Integration rendszer (Github Actions) konfigurálása és használata. </p>
 <p>A fejlesztés kizárólag Kotlin nyelven történhet. </p>
@@ -677,10 +663,6 @@
 <p>A labor végén a dev branchről nyiss egy PR-t a main-re.</p>
 </li>
 </ol>
-<h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
-<p>Jelen labor célja, hogy támogassa a megvalósítandó alkalmazás specifikálását, a részfeladatok egyértelmű azonosítását, és az elvárt funkcionalitás megfelelő definiálását, valamint, hogy megfelelő alapot nyújtson a további laborokhoz, különösen az architektúra tervezés feladathoz.  </p>
-<p>Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részéletességgel specifikáljuk is. Használjunk use-case diagramokat!  </p>
-<p>Majd az alkalmazás képernyőit azonosítsuk, és elkészítjük a hozzájuk tartozó képernyőterveket. </p>
 <h2 id="elofeltetelek">Előfeltételek<a class="headerlink" href="#elofeltetelek" title="Permanent link">&para;</a></h2>
 <p>A labor elvégzéséhez szükséges eszközök: </p>
 <ul>
@@ -704,8 +686,8 @@
           </path>
         </svg>
       </span>
-      <span title="2024. január 19. 09:48:45">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-19T09:48:45+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-19</span>
+      <span title="2024. január 19. 09:52:08">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-19T09:52:08+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-19</span>
       </span>
     </span>
 
