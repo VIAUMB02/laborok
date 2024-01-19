@@ -21,7 +21,7 @@
     
     
       
-        <title>Android 3 - Hálózat és adatbázis - BMEVIAUMB02 - Mobilszoftver laboratórium laborfeladatok</title>
+        <title>Android 4 - Felület és üzleti logika - BMEVIAUMB02 - Mobilszoftver laboratórium laborfeladatok</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#android-3-halozat-es-adatbazis" class="md-skip">
+        <a href="#android-4-felulet-es-uzleti-logika" class="md-skip">
           Kihagyás
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Android 3 - Hálózat és adatbázis
+              Android 4 - Felület és üzleti logika
             
           </span>
         </div>
@@ -482,12 +482,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Android 3 - Hálózat és adatbázis
+          Android 4 - Felület és üzleti logika
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Android 3 - Hálózat és adatbázis
+        Android 4 - Felület és üzleti logika
       </a>
       
         
@@ -555,7 +555,7 @@
   
     <li class="md-nav__item">
       <a href="../A05/" class="md-nav__link">
-        Android 3 - Hálózat és adatbázis
+        Android 5 - Tesztek és analitika
       </a>
     </li>
   
@@ -646,10 +646,15 @@
   
 
 
-<h1 id="android-3-halozat-es-adatbazis">Android 3 - Hálózat és adatbázis<a class="headerlink" href="#android-3-halozat-es-adatbazis" title="Permanent link">&para;</a></h1>
+<h1 id="android-4-felulet-es-uzleti-logika">Android 4 - Felület és üzleti logika<a class="headerlink" href="#android-4-felulet-es-uzleti-logika" title="Permanent link">&para;</a></h1>
 <h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
-<p>A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz, valamint a hálózati hívások tesztelését elősegítő mock hálózati réteg elkezdése (befejezni majd a következő laboron, a teszteknél kell).  </p>
-<p>A hálózati hívások elkészítése után az ORM réteg implementálása, valamint a tesztekhez is használt ORM réteg elkezdése a cél. </p>
+<p>Jelen labor célja, hogy az előző laborok során elkészült megoldásra épülve, az alkalmazás elvárt felületei elkészüljenek, nem csak funkcionálisan megfelelő, de felhasználóbarát felületek jöjjenek létre. Ide tartoznak az: </p>
+<ul>
+<li>Alkalmazás ikon és képek </li>
+<li>Felhasználóbarát színek és térközök </li>
+<li>Elvárt elrendezés és viselkedés </li>
+</ul>
+<p>Fontos, hogy a felületet ne bonyolítsuk túl, nem feltétlenül szükséges a legváltozatosabb betűtípusok és animációk használata, valamint elegendő egy készülék típus (telefon vagy tablet, de több felbontás) és egy orientáció (álló vagy fekvő) támogatása. Fontos, hogy a labor végére egy funkcionálisan megfelelően működő és megjelenő alkalmazást kapjunk. </p>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>A feladatok megoldása során ne felejtsd el követni a <a href="../../tudnivalok/github/GitHub/">feladat beadás folyamatát</a>.</p>
 <h3 id="git-repository-hasznalata">Git repository használata<a class="headerlink" href="#git-repository-hasznalata" title="Permanent link">&para;</a></h3>
@@ -665,14 +670,11 @@
 <p>A labor elvégzéséhez szükséges eszközök: </p>
 <ul>
 <li>Android Studio</li>
-<li>Git</li>
 </ul>
 <p>A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése </p>
 <div class="admonition example">
 <p class="admonition-title">ELVÁRT EREDMÉNYEK - BEADANDÓ</p>
-<p>Elkészült alkalmazás skeleton és architektúra (minden nézetre a megfelelő architektúra elemek és repository-k, MVVM, Hilt, projekt .zip, max. 50 pont)  </p>
-<p>Git verziókezelő használata, Git-flow kialakítása, main, dev, feature branchek legalább 5 commital és egy merge-el. (pdf-ben a log screenshot és rövid leírás, Github link, max. 25 pont)  </p>
-<p>Github Actions konfiguráció és futtatás (legalább 1 sikeres build, screenshot, .pdf, max. 25 pont) </p>
+<p>Elkészült alkalmazás felület és működés (max. 100 pont)  </p>
 </div>
 
     <hr>
@@ -684,8 +686,8 @@
           </path>
         </svg>
       </span>
-      <span title="2024. január 19. 09:52:08">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-19T09:52:08+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-19</span>
+      <span title="2024. január 19. 09:56:43">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-19T09:56:43+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-19</span>
       </span>
     </span>
 
