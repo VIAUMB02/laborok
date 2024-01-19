@@ -1,11 +1,8 @@
 # Android 1 - Specifikáció
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): 2024.03.10. 23:59  
-    A laborvezetők Github usernevei:  
-    - Hideg Attila: AttilaHideg  
-    - Pomázi Krisztián: kpomazi  
-    - Sik Dávid: siktdavid  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.03.10. 23:59**  
+    Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
 
 ## Bevezetés
 
