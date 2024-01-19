@@ -1,4 +1,4 @@
-# Android 3 - Felület és üzleti logika
+# Android 4 - Felület és üzleti logika
 
 ## Célkitűzés
 

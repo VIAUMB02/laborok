@@ -1,10 +1,12 @@
-# Android 3 - Hálózat és adatbázis
+# Android 5 - Tesztek és analitika
 
 ## Célkitűzés
 
-A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz, valamint a hálózati hívások tesztelését elősegítő mock hálózati réteg elkezdése (befejezni majd a következő laboron, a teszteknél kell).  
+Jelen labor célja, hogy az előző laborok során elkészült alkalmazást ellátsuk, mind Google Analytics, mind Crashlytics (Fabric) analitikai és crash report megoldásokkal. 
 
-A hálózati hívások elkészítése után az ORM réteg implementálása, valamint a tesztekhez is használt ORM réteg elkezdése a cél. 
+Cél, továbbá az előző labor végén elkészült hálózati és adatbázis réteget tesztelését elősegítő mock hálózati réteg elkészítése, majd a hálózati hívások és adatbázis réteg Unit tesztelése.  
+
+Tekintettel a laborok során kapott visszajelzésekre, korrekciókra, valamint az eltérő komplexitású feladatokból fakadó fejlesztési időkre, a UI tesztelés feladata opcionális, viszont a feladatra kapott pontok plusz pontként számítanak.
 
 
 ## Előkészületek
@@ -22,14 +24,16 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 A labor elvégzéséhez szükséges eszközök: 
 
 - Android Studio
-- Git
+- Google Play Console 
 
 A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése 
 
 !!!example "ELVÁRT EREDMÉNYEK - BEADANDÓ" 
 
-    Elkészült alkalmazás skeleton és architektúra (minden nézetre a megfelelő architektúra elemek és repository-k, MVVM, Hilt, projekt .zip, max. 50 pont)  
+    Google Analytics integráció (screenshot az eseményekről a kontrol panelen, max. 25 pont)  
 
-    Git verziókezelő használata, Git-flow kialakítása, main, dev, feature branchek legalább 5 commital és egy merge-el. (pdf-ben a log screenshot és rövid leírás, Github link, max. 25 pont)  
+    Crashlytics integráció (screenshot az összeomlásokról a kontrol panelen, max. 25 pont)
 
-    Github Actions konfiguráció és futtatás (legalább 1 sikeres build, screenshot, .pdf, max. 25 pont) 
+    Kapcsolódó Unit tesztek (lehetőleg minden funkcionalitást fedjen le, ne csak a hálózati hívásokat, mind sikeresen fusson le, max. 50 pont)    
+
+    Espresso UI tesztek, lehetőleg a legtöbb funkcionalitást lefedve (az összes teszt fusson le, max. +50 pont)  
