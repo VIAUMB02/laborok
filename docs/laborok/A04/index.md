@@ -1,10 +1,14 @@
-# Android 3 - Hálózat és adatbázis
+# Android 3 - Felület és üzleti logika
 
 ## Célkitűzés
 
-A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz, valamint a hálózati hívások tesztelését elősegítő mock hálózati réteg elkezdése (befejezni majd a következő laboron, a teszteknél kell).  
+Jelen labor célja, hogy az előző laborok során elkészült megoldásra épülve, az alkalmazás elvárt felületei elkészüljenek, nem csak funkcionálisan megfelelő, de felhasználóbarát felületek jöjjenek létre. Ide tartoznak az: 
 
-A hálózati hívások elkészítése után az ORM réteg implementálása, valamint a tesztekhez is használt ORM réteg elkezdése a cél. 
+- Alkalmazás ikon és képek 
+- Felhasználóbarát színek és térközök 
+- Elvárt elrendezés és viselkedés 
+
+Fontos, hogy a felületet ne bonyolítsuk túl, nem feltétlenül szükséges a legváltozatosabb betűtípusok és animációk használata, valamint elegendő egy készülék típus (telefon vagy tablet, de több felbontás) és egy orientáció (álló vagy fekvő) támogatása. Fontos, hogy a labor végére egy funkcionálisan megfelelően működő és megjelenő alkalmazást kapjunk. 
 
 
 ## Előkészületek
@@ -22,14 +26,9 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 A labor elvégzéséhez szükséges eszközök: 
 
 - Android Studio
-- Git
 
 A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése 
 
 !!!example "ELVÁRT EREDMÉNYEK - BEADANDÓ" 
 
-    Elkészült alkalmazás skeleton és architektúra (minden nézetre a megfelelő architektúra elemek és repository-k, MVVM, Hilt, projekt .zip, max. 50 pont)  
-
-    Git verziókezelő használata, Git-flow kialakítása, main, dev, feature branchek legalább 5 commital és egy merge-el. (pdf-ben a log screenshot és rövid leírás, Github link, max. 25 pont)  
-
-    Github Actions konfiguráció és futtatás (legalább 1 sikeres build, screenshot, .pdf, max. 25 pont) 
+    Elkészült alkalmazás felület és működés (max. 100 pont)  
