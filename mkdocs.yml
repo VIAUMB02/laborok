@@ -1,8 +1,8 @@
-site_name: BMEVIAUAV21 - Androidalapú szoftverfejlesztés laborfeladatok
-site_author: Ekler Péter, Gazdi László, Kövesdán Gábor, Pásztor Dániel, Pomázi Krisztián, Tóth Tibor
+site_name: BMEVIAUMB02 - Mobilszoftver laboratórium laborfeladatok
+site_author: Forstner Bertalan, Pomázi Kriszitán, Sik Dávid, Hideg Attila
 copyright: Copyright &copy; BME VIK AUT
-repo_name: viauav21/laborok
-repo_url: https://github.com/viauav21/laborok
+repo_name: viaumb02/laborok
+repo_url: https://github.com/VIAUMB02/laborok
 
 theme:
   name: material
@@ -75,7 +75,7 @@ plugins:
       timezone: Europe/Budapest
       locale: hu
   - git-committers:
-      repository: VIAUAV21/laborok
+      repository: VIAUMB02/laborok
       branch: master
 
 nav:
@@ -85,18 +85,9 @@ nav:
       - tudnivalok/github/GitHub-Actions.md
       - tudnivalok/github/GitHub-credentials.md
       - tudnivalok/github/contributing.md
-  - "Laborok":
-      - laborok/basics/index.md
-      - laborok/tictactoe/index.md
-      - laborok/calculator/index.md
-      - laborok/compose/index.md
-      - laborok/todo_compose_basics/index.md
-      - laborok/persistence/index.md
-      - laborok/firebase/index.md
-      - laborok/di/index.md
-      - laborok/network/index.md
-      - laborok/alarm/index.md
-      - laborok/permissions/index.md
-      - laborok/timetable/index.md
-  - "Házi feladat":
-      - hf/index.md
+  - "Android Laborok":
+      - laborok/A01/index.md
+      - laborok/A02/index.md
+      - laborok/A03/index.md
+      - laborok/A04/index.md
+      - laborok/A05/index.md
