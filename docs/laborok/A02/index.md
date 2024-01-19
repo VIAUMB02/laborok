@@ -1,8 +1,8 @@
-# Android 1 - Architektúra és környezet
+# Android 2 - Architektúra és környezet
 
-## Bevezetés
+## Célkitűzés
 
-elen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. 
+Jelen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. 
 
 Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a fragment) megfelelő definiálása. 
 
@@ -20,14 +20,6 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 1. Az első labor során létrehozott repository-ban dolgozz.
 
 2. A labor végén a dev branchről nyiss egy PR-t a main-re.
-
-## Célkitűzés
-
-Jelen labor célja, hogy támogassa a megvalósítandó alkalmazás specifikálását, a részfeladatok egyértelmű azonosítását, és az elvárt funkcionalitás megfelelő definiálását, valamint, hogy megfelelő alapot nyújtson a további laborokhoz, különösen az architektúra tervezés feladathoz.  
-
-Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részéletességgel specifikáljuk is. Használjunk use-case diagramokat!  
-
-Majd az alkalmazás képernyőit azonosítsuk, és elkészítjük a hozzájuk tartozó képernyőterveket. 
 
 ## Előfeltételek 
 
