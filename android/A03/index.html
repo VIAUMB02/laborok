@@ -11,10 +11,6 @@
       
       
       
-        <link rel="prev" href="../A02/">
-      
-      
-        <link rel="next" href="../A04/">
       
       <link rel="icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
@@ -230,15 +226,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../A01/" class="md-tabs__link md-tabs__link--active">
+      <a href="../A01/" class="md-tabs__link">
         Android Laborok
       </a>
     </li>
@@ -399,16 +393,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
       
@@ -417,7 +409,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Android Laborok
@@ -432,130 +424,6 @@
     <li class="md-nav__item">
       <a href="../A01/" class="md-nav__link">
         Android 1 - Specifikáció
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../A02/" class="md-nav__link">
-        Android 2 - Architektúra és környezet
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Android 3 - Hálózat és adatbázis
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Android 3 - Hálózat és adatbázis
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tartalomjegyzék">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tartalomjegyzék
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#celkituzes" class="md-nav__link">
-    Célkitűzés
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elokeszuletek" class="md-nav__link">
-    Előkészületek
-  </a>
-  
-    <nav class="md-nav" aria-label="Előkészületek">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-repository-hasznalata" class="md-nav__link">
-    Git repository használata
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elofeltetelek" class="md-nav__link">
-    Előfeltételek
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../A04/" class="md-nav__link">
-        Android 4 - Felület és üzleti logika
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../A05/" class="md-nav__link">
-        Android 5 - Tesztek és analitika
       </a>
     </li>
   
@@ -647,9 +515,15 @@
 
 
 <h1 id="android-3-halozat-es-adatbazis">Android 3 - Hálózat és adatbázis<a class="headerlink" href="#android-3-halozat-es-adatbazis" title="Permanent link">&para;</a></h1>
+<div class="admonition danger">
+<p class="admonition-title">HATÁRIDŐ</p>
+<p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.04.07. 23:59</strong><br />
+Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)</p>
+</div>
 <h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
-<p>A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz, valamint a hálózati hívások tesztelését elősegítő mock hálózati réteg elkezdése (befejezni majd a következő laboron, a teszteknél kell).  </p>
-<p>A hálózati hívások elkészítése után az ORM réteg implementálása, valamint a tesztekhez is használt ORM réteg elkezdése a cél. </p>
+<p>A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. </p>
+<p>Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz.</p>
+<p>A hálózati hívások elkészítése után az ORM réteg implementálása. </p>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>A feladatok megoldása során ne felejtsd el követni a <a href="../../tudnivalok/github/GitHub/">feladat beadás folyamatát</a>.</p>
 <h3 id="git-repository-hasznalata">Git repository használata<a class="headerlink" href="#git-repository-hasznalata" title="Permanent link">&para;</a></h3>
@@ -684,8 +558,8 @@
           </path>
         </svg>
       </span>
-      <span title="2024. január 19. 10:10:22">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-19T10:10:22+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-19</span>
+      <span title="2024. január 23. 14:39:12">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-23T14:39:12+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-23</span>
       </span>
     </span>
 
