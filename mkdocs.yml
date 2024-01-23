@@ -1,5 +1,5 @@
 site_name: BMEVIAUMB02 - Mobilszoftver laboratórium laborfeladatok
-site_author: Forstner Bertalan, Pomázi Kriszitán, Sik Dávid, Hideg Attila
+site_author: Forstner Bertalan, Pomázi Krisztián, Sik Dávid, Hideg Attila
 copyright: Copyright &copy; BME VIK AUT
 repo_name: viaumb02/laborok
 repo_url: https://github.com/VIAUMB02/laborok
@@ -76,7 +76,7 @@ plugins:
       locale: hu
   - git-committers:
       repository: VIAUMB02/laborok
-      branch: master
+      branch: main
 
 nav:
   - "Tudnivalók":
