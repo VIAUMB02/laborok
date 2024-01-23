@@ -647,11 +647,19 @@
 
 
 <h1 id="android-2-architektura-es-kornyezet">Android 2 - Architektúra és környezet<a class="headerlink" href="#android-2-architektura-es-kornyezet" title="Permanent link">&para;</a></h1>
+<div class="admonition danger">
+<p class="admonition-title">HATÁRIDŐ</p>
+<p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.03.24. 23:59</strong><br />
+Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)</p>
+</div>
 <h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
 <p>Jelen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. </p>
-<p>Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a fragment) megfelelő definiálása. </p>
+<p>Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a view) megfelelő definiálása. 
+Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de még az osztályok lehetnek "üresek".</p>
+<p>További olvasnivalók a témában:
+<a href="https://developer.android.com/topic/architecture/recommendations">https://developer.android.com/topic/architecture/recommendations</a></p>
 <p>További cél az alkalmazás fejlesztéséhez használt Git verziókezelő és Continuous Integration rendszer (Github Actions) konfigurálása és használata. </p>
-<p>A fejlesztés kizárólag Kotlin nyelven történhet. </p>
+<p>A fejlesztés kizárólag Kotlin nyelven történhet, Jetpack Compose keretrendszer használatával.</p>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>A feladatok megoldása során ne felejtsd el követni a <a href="../../tudnivalok/github/GitHub/">feladat beadás folyamatát</a>.</p>
 <h3 id="git-repository-hasznalata">Git repository használata<a class="headerlink" href="#git-repository-hasznalata" title="Permanent link">&para;</a></h3>
@@ -672,9 +680,12 @@
 <p>A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése </p>
 <div class="admonition example">
 <p class="admonition-title">ELVÁRT EREDMÉNYEK - BEADANDÓ</p>
-<p>Elkészült alkalmazás skeleton és architektúra (minden nézetre a megfelelő architektúra elemek és repository-k, MVVM, Hilt, projekt .zip, max. 50 pont)  </p>
-<p>Git verziókezelő használata, Git-flow kialakítása, main, dev, feature branchek legalább 5 commital és egy merge-el. (pdf-ben a log screenshot és rövid leírás, Github link, max. 25 pont)  </p>
-<p>Github Actions konfiguráció és futtatás (legalább 1 sikeres build, screenshot, .pdf, max. 25 pont) </p>
+<p><strong>Elkészült alkalmazás skeleton és architektúra (max. 50 pont):</strong><br />
+- Minden nézetre a megfelelő architektúra elemek és repository-k, MVVM, Hilt  </p>
+<p><strong>Git verziókezelő használata, Git-flow kialakítása (max. 25 pont):</strong><br />
+- main, dev, feature branchek legalább 5 committal és egy merge-el</p>
+<p><strong>Github Actions konfiguráció és futtatás (max. 25 pont):</strong><br />
+- legalább 1 sikeres build </p>
 </div>
 
     <hr>
@@ -686,8 +697,8 @@
           </path>
         </svg>
       </span>
-      <span title="2024. január 19. 10:10:22">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-19T10:10:22+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-19</span>
+      <span title="2024. január 23. 14:31:49">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-23T14:31:49+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-23</span>
       </span>
     </span>
 
