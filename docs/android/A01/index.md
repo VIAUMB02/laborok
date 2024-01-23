@@ -38,7 +38,7 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
     !!! tip ""
         Egyetemi laborokban, ha a checkout során nem kér a rendszer felhasználónevet és jelszót, és nem sikerül a checkout, akkor valószínűleg a gépen korábban megjegyzett felhasználónévvel próbálkozott a rendszer. Először töröld ki a mentett belépési adatokat (lásd [itt](../../tudnivalok/github/GitHub-credentials.md)), és próbáld újra.
 
-3. Hozz létre egy új ágat `labor01` néven, és ezen az ágon dolgozz.
+3. Hozz létre egy új ágat `spec` néven, és ezen az ágon dolgozz.
 
 4. A `neptun.txt` fájlba írd bele a Neptun kódodat. A fájlban semmi más ne szerepeljen, csak egyetlen sorban a Neptun kód 6 karaktere.
 
@@ -49,6 +49,8 @@ Jelen labor célja, hogy támogassa a megvalósítandó alkalmazás specifikál�
 Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részéletességgel specifikáljuk is. Használjunk use-case diagramokat!  
 
 Majd az alkalmazás képernyőit azonosítsuk, és elkészítjük a hozzájuk tartozó képernyőterveket. 
+
+A specifikációt és a képernyőképeket a letöltött repo Readme-jében kell beadni, az ott található sablonnak megfelelően.
 
 ## Előfeltételek 
 
@@ -61,6 +63,7 @@ A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése
 
 !!!example "ELVÁRT EREDMÉNYEK - BEADANDÓ" 
 
-    Szöveges specifikáció az actorok, use-case-ek és user-story-k leírásával (.pdf, max. 50 pont) 
-
-    Képernyőtervek (.pdf, max. 50 pont) 
+    **Szöveges specifikáció az actorok, use-case-ek és user-story-k leírásával (max. 50 pont):**  
+    - A sablon minden pontja legyen megfelelően kitöltve.  
+    **Képernyőtervek (max. 50 pont)**  
+    - Részletes képernyőterv minden képernyőről.
