@@ -1,11 +1,16 @@
 # Android 3 - Hálózat és adatbázis
 
+!!!danger "HATÁRIDŐ"
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.04.07. 23:59**  
+    Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
+
 ## Célkitűzés
 
-A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz, valamint a hálózati hívások tesztelését elősegítő mock hálózati réteg elkezdése (befejezni majd a következő laboron, a teszteknél kell).  
+A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. 
 
-A hálózati hívások elkészítése után az ORM réteg implementálása, valamint a tesztekhez is használt ORM réteg elkezdése a cél. 
+Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz.
 
+A hálózati hívások elkészítése után az ORM réteg implementálása. 
 
 ## Előkészületek
 

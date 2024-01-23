@@ -1,5 +1,9 @@
 # Android 5 - Tesztek és analitika
 
+!!!danger "HATÁRIDŐ"
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.??.??. 23:59**  
+    Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
+
 ## Célkitűzés
 
 Jelen labor célja, hogy az előző laborok során elkészült alkalmazást ellátsuk, mind Google Analytics, mind Crashlytics (Fabric) analitikai és crash report megoldásokkal. 
