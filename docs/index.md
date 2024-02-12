@@ -1,8 +1,6 @@
 # Tárgy ismertető
 
-A tárgykövetelményeket lásd a [hivatalos tantárgyi adatlapon](https://portal.vik.bme.hu/kepzes/targyak/VIAUMB02).
-
-A laborok sorrendjét és a beadások határidejét Moodle-ben találod.
+A tárgykövetelményeket lásd a [hivatalos tantárgyi adatlapon](https://portal.vik.bme.hu/kepzes/targyak/VIAUMB02) és a Moodle-ben.
 
 !!! note "Javítás az anyagban"
     A tárgy hallgatóinak az anyagban történő javításért, kiegészítésért plusz pontot adunk! Ha hibát találsz, vagy kiegészítenéd/pontosítanád a feladatleírásokat, nyiss egy _pull request_-et! A repository linkjét a jobb felső sarokban találod.
