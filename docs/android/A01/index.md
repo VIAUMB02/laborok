@@ -46,7 +46,7 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 
 Jelen labor célja, hogy támogassa a megvalósítandó alkalmazás specifikálását, a részfeladatok egyértelmű azonosítását, és az elvárt funkcionalitás megfelelő definiálását, valamint, hogy megfelelő alapot nyújtson a további laborokhoz, különösen az architektúra tervezés feladathoz.  
 
-Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részéletességgel specifikáljuk is. Használjunk use-case diagramokat!  
+Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részletességgel specifikáljuk is. Használjunk use-case diagramokat!  
 
 Majd az alkalmazás képernyőit azonosítsuk, és elkészítjük a hozzájuk tartozó képernyőterveket. 
 
