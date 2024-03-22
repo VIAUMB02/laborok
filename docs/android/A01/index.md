@@ -1,7 +1,7 @@
 # Android 1 - Specifikáció
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.03.10. 23:59**  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.03.24. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
 
 ## Bevezetés
@@ -46,7 +46,7 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 
 Jelen labor célja, hogy támogassa a megvalósítandó alkalmazás specifikálását, a részfeladatok egyértelmű azonosítását, és az elvárt funkcionalitás megfelelő definiálását, valamint, hogy megfelelő alapot nyújtson a további laborokhoz, különösen az architektúra tervezés feladathoz.  
 
-Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részéletességgel specifikáljuk is. Használjunk use-case diagramokat!  
+Elsőként az alkalmazás elvárt funkcionalitását fogalmazzuk meg, azonosítsuk az alkalmazás actorait, use-case-eit és user- story-jait, majd ezeket megfelelő részletességgel specifikáljuk is. Használjunk use-case diagramokat!  
 
 Majd az alkalmazás képernyőit azonosítsuk, és elkészítjük a hozzájuk tartozó képernyőterveket. 
 
