@@ -454,48 +454,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tartalomjegyzék
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#celkituzes" class="md-nav__link">
-    Célkitűzés
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elokeszuletek" class="md-nav__link">
-    Előkészületek
-  </a>
-  
-    <nav class="md-nav" aria-label="Előkészületek">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-repository-hasznalata" class="md-nav__link">
-    Git repository használata
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elofeltetelek" class="md-nav__link">
-    Előfeltételek
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -513,9 +471,10 @@
 
 
 <h1 id="android-2-architektura-es-kornyezet">Android 2 - Architektúra és környezet<a class="headerlink" href="#android-2-architektura-es-kornyezet" title="Permanent link">&para;</a></h1>
+<h1 id="frissites-alatt-nem-vegleges-verzio">FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ<a class="headerlink" href="#frissites-alatt-nem-vegleges-verzio" title="Permanent link">&para;</a></h1>
 <div class="admonition danger">
 <p class="admonition-title">HATÁRIDŐ</p>
-<p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.03.24. 23:59</strong><br />
+<p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.04.14. 23:59</strong><br />
 Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)</p>
 </div>
 <h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
@@ -523,18 +482,81 @@ Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), 
 <p>Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a view) megfelelő definiálása. 
 Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de még az osztályok lehetnek "üresek".</p>
 <p>További olvasnivalók a témában:
-<a href="https://developer.android.com/topic/architecture/recommendations">https://developer.android.com/topic/architecture/recommendations</a></p>
-<p>További cél az alkalmazás fejlesztéséhez használt Git verziókezelő és Continuous Integration rendszer (Github Actions) konfigurálása és használata. </p>
+<a href="https://developer.android.com/topic/architecture/recommendations">https://developer.android.com/topic/architecture/recommendations</a><br />
+Példaalkalmazások követendő architektúrával:<br />
+<a href="https://github.com/skydoves/DisneyCompose">https://github.com/skydoves/DisneyCompose</a></p>
+<details class="info">
+<summary>Skeleton példa</summary>
+<div class="highlight"><pre><span></span><code>- data
+    - dao
+        - ...
+    - datasource
+        - ...
+    - entities
+        - ...
+    - TodoDatabase.kt
+- domain
+    - ...
+- feature
+    - todo_list
+        - TodoListScreen.kt
+        - TodoListViewModel.kt
+    - todo_details
+        - TodoDetailsScreen.kt
+        - TodoDetailsViewModel.kt
+    - todo_create
+        - TodoCreateScreen.kt
+        - TodoCreateViewModel.kt
+- navigation
+    - NavGraph.kt
+    - Screen.kt
+- network
+    - ...
+- ui
+    - common   
+        - ... (több helyen használt Composable-k)
+    - model
+        - ... (UI model osztályok)
+    - theme 
+        - ... (generált téma Kotlin fájlok)
+    - util
+        - ... (util osztályok)
+- MainActivity.kt
+- MainApplication.kt
+</code></pre></div>
+</details>
+<p>További cél az alkalmazás fejlesztéséhez használt <strong>Git verziókezelő</strong> és <strong>Continuous Integration rendszer (Github Actions)</strong> konfigurálása és használata.   </p>
+<p>A fejlesztés során a Git Flow-t szükséges használni:<br />
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</a></p>
+<details class="info">
+<summary>Github Actions példa</summary>
+<p>Build folyamat:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build</span>
+<span class="nt">on</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pull_request</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">push</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">branches</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">        </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout the code</span>
+<span class="w">          </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build the app</span>
+<span class="w">          </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./gradlew build</span>
+</code></pre></div>
+</details>
 <p>A fejlesztés kizárólag Kotlin nyelven történhet, Jetpack Compose keretrendszer használatával.</p>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>A feladatok megoldása során ne felejtsd el követni a <a href="../../tudnivalok/github/GitHub/">feladat beadás folyamatát</a>.</p>
 <h3 id="git-repository-hasznalata">Git repository használata<a class="headerlink" href="#git-repository-hasznalata" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>Az első labor során létrehozott repository-ban dolgozz.</p>
+<p>Az első labor során létrehozott repository-ban dolgozz a Git Flow szerint.</p>
 </li>
 <li>
-<p>A labor végén a dev branchről nyiss egy PR-t a main-re.</p>
+<p>A labor végén egy release branchről nyiss egy PR-t a main-re.</p>
 </li>
 </ol>
 <h2 id="elofeltetelek">Előfeltételek<a class="headerlink" href="#elofeltetelek" title="Permanent link">&para;</a></h2>
@@ -547,7 +569,7 @@ Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de
 <div class="admonition example">
 <p class="admonition-title">ELVÁRT EREDMÉNYEK - BEADANDÓ</p>
 <p><strong>Elkészült alkalmazás skeleton és architektúra (max. 50 pont):</strong><br />
-- Minden nézetre a megfelelő architektúra elemek és repository-k, MVVM, Hilt  </p>
+- Minden nézetre a megfelelő architektúra elemek és repository-k, MVVM és Hilt használatát feltételezve  </p>
 <p><strong>Git verziókezelő használata, Git-flow kialakítása (max. 25 pont):</strong><br />
 - main, dev, feature branchek legalább 5 committal és egy merge-el</p>
 <p><strong>Github Actions konfiguráció és futtatás (max. 25 pont):</strong><br />
@@ -563,8 +585,8 @@ Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de
           </path>
         </svg>
       </span>
-      <span title="2024. január 23. 14:31:49">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-01-23T14:31:49+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-01-23</span>
+      <span title="2024. március 22. 11:38:59">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-03-22T11:38:59+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-22</span>
       </span>
     </span>
 
