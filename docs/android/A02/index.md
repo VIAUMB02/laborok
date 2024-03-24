@@ -1,7 +1,5 @@
 # Android 2 - Architektúra és környezet
 
-# FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ
-
 !!!danger "HATÁRIDŐ"
 	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.04.14. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
@@ -11,21 +9,27 @@
 Jelen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. 
 
 Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a view) megfelelő definiálása. 
-Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de még az osztályok lehetnek "üresek".
+Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de még az osztályok lehetnek "üresek".  
+A javasolt architektúra az **MVVM**, a javasolt DI könyvtár pedig a **Dagger-Hilt**, ezeketől megfelelő indoklás esetén el lehet térni.
 
 További olvasnivalók a témában:
 https://developer.android.com/topic/architecture/recommendations  
-Példaalkalmazások követendő architektúrával:  
+Példaalkalmazások megfelelő architektúrával:  
 https://github.com/skydoves/DisneyCompose
 
 ??? info "Skeleton példa"
+
+    Az itt bemutatott struktúra nem tartalmaz minden szükséges osztályt, csak egy lehetséges hierarchiát kíván szemléltetni.
+
         - data
             - dao
-                - ...
+                - ... (Room DAO-k)
             - datasource
-                - ...
+                - ... (repositoryk)
+            - di
+                - ... (Hilt modulok)
             - entities
-                - ...
+                - ... (Room entitások)
             - TodoDatabase.kt
         - domain
             - ...
@@ -43,7 +47,7 @@ https://github.com/skydoves/DisneyCompose
             - NavGraph.kt
             - Screen.kt
         - network
-            - ...
+            - ... (hálózati réteg)
         - ui
             - common   
                 - ... (több helyen használt Composable-k)
@@ -101,6 +105,7 @@ A labor elvégzéséhez szükséges eszközök:
 
 - Android Studio
 - Git
+- Github
 
 A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése 
 
@@ -108,9 +113,12 @@ A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése
 
     **Elkészült alkalmazás skeleton és architektúra (max. 50 pont):**  
     - Minden nézetre a megfelelő architektúra elemek és repository-k, MVVM és Hilt használatát feltételezve  
+    - A repo Readme-jében a választott architektúra rövid ismertetése, a választás indoklása
 
     **Git verziókezelő használata, Git-flow kialakítása (max. 25 pont):**  
-    - main, dev, feature branchek legalább 5 committal és egy merge-el
+    - main, dev, feature branchek legalább 5 committal és egy merge-el  
+    - Screenshot hozzáadva a repo Readme-jéhez a commitokról
 
     **Github Actions konfiguráció és futtatás (max. 25 pont):**  
-    - legalább 1 sikeres build 
+    - Legalább 1 sikeres build  
+    - Screenshot hozzáadva a repo Readme-jéhez a sikeres buildről
