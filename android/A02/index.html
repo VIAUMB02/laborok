@@ -11,6 +11,8 @@
       
       
       
+        <link rel="prev" href="../A01/">
+      
       
       <link rel="icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
@@ -224,13 +226,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../A01/" class="md-tabs__link">
+      <a href="../A01/" class="md-tabs__link md-tabs__link--active">
         Android Laborok
       </a>
     </li>
@@ -391,14 +395,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -407,7 +413,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Android Laborok
@@ -423,6 +429,88 @@
       <a href="../A01/" class="md-nav__link">
         Android 1 - Specifikáció
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Android 2 - Architektúra és környezet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Android 2 - Architektúra és környezet
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tartalomjegyzék">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tartalomjegyzék
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#celkituzes" class="md-nav__link">
+    Célkitűzés
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elokeszuletek" class="md-nav__link">
+    Előkészületek
+  </a>
+  
+    <nav class="md-nav" aria-label="Előkészületek">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-repository-hasznalata" class="md-nav__link">
+    Git repository használata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elofeltetelek" class="md-nav__link">
+    Előfeltételek
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -454,6 +542,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tartalomjegyzék
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#celkituzes" class="md-nav__link">
+    Célkitűzés
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elokeszuletek" class="md-nav__link">
+    Előkészületek
+  </a>
+  
+    <nav class="md-nav" aria-label="Előkészületek">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-repository-hasznalata" class="md-nav__link">
+    Git repository használata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elofeltetelek" class="md-nav__link">
+    Előfeltételek
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -471,7 +601,6 @@
 
 
 <h1 id="android-2-architektura-es-kornyezet">Android 2 - Architektúra és környezet<a class="headerlink" href="#android-2-architektura-es-kornyezet" title="Permanent link">&para;</a></h1>
-<h1 id="frissites-alatt-nem-vegleges-verzio">FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ<a class="headerlink" href="#frissites-alatt-nem-vegleges-verzio" title="Permanent link">&para;</a></h1>
 <div class="admonition danger">
 <p class="admonition-title">HATÁRIDŐ</p>
 <p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.04.14. 23:59</strong><br />
@@ -480,20 +609,24 @@ Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), 
 <h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
 <p>Jelen labor célja, hogy támogassa az előző labor során elkészült specifikáció alapján az alkalmazás fejlesztésének elkezdését. Cél, hogy az alkalmazás alapvető architektúráját megtervezzük és implementáljuk, úgy, hogy ez a fejlesztés során előjövő igényeket a lehető legjobban kielégítse, és a lehető legkevesebbet változtassunk az alkalmazás alapvető architektúráján. </p>
 <p>Az architektúrára épülve elkezdjük a skeletonnak fejlesztését. A váz fejlesztése során a megfelelő nézetek, és hozzájuk kapcsolódó viewmodelek, repository-k elkészítése a cél, de még tényleges üzleti logika és valós felületi elemek (UI) nélkül. Cél az alkalmazás rétegei közötti interakciók (mit tud a viewmodel elvégezni, mit tud megjeleníteni a view) megfelelő definiálása. 
-Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de még az osztályok lehetnek "üresek".</p>
+Ez a gyakorlatban azt jelenti, hogy minden főbb osztályt létre kell hozni, de még az osztályok lehetnek "üresek".<br />
+A javasolt architektúra az <strong>MVVM</strong>, a javasolt DI könyvtár pedig a <strong>Dagger-Hilt</strong>, ezeketől megfelelő indoklás esetén el lehet térni.</p>
 <p>További olvasnivalók a témában:
 <a href="https://developer.android.com/topic/architecture/recommendations">https://developer.android.com/topic/architecture/recommendations</a><br />
-Példaalkalmazások követendő architektúrával:<br />
+Példaalkalmazások megfelelő architektúrával:<br />
 <a href="https://github.com/skydoves/DisneyCompose">https://github.com/skydoves/DisneyCompose</a></p>
 <details class="info">
 <summary>Skeleton példa</summary>
+<p>Az itt bemutatott struktúra nem tartalmaz minden szükséges osztályt, csak egy lehetséges hierarchiát kíván szemléltetni.</p>
 <div class="highlight"><pre><span></span><code>- data
     - dao
-        - ...
+        - ... (Room DAO-k)
     - datasource
-        - ...
+        - ... (repositoryk)
+    - di
+        - ... (Hilt modulok)
     - entities
-        - ...
+        - ... (Room entitások)
     - TodoDatabase.kt
 - domain
     - ...
@@ -511,7 +644,7 @@ Példaalkalmazások követendő architektúrával:<br />
     - NavGraph.kt
     - Screen.kt
 - network
-    - ...
+    - ... (hálózati réteg)
 - ui
     - common   
         - ... (több helyen használt Composable-k)
@@ -564,16 +697,20 @@ Példaalkalmazások követendő architektúrával:<br />
 <ul>
 <li>Android Studio</li>
 <li>Git</li>
+<li>Github</li>
 </ul>
 <p>A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése </p>
 <div class="admonition example">
 <p class="admonition-title">ELVÁRT EREDMÉNYEK - BEADANDÓ</p>
 <p><strong>Elkészült alkalmazás skeleton és architektúra (max. 50 pont):</strong><br />
-- Minden nézetre a megfelelő architektúra elemek és repository-k, MVVM és Hilt használatát feltételezve  </p>
+- Minden nézetre a megfelelő architektúra elemek és repository-k, MVVM és Hilt használatát feltételezve<br />
+- A repo Readme-jében a választott architektúra rövid ismertetése, a választás indoklása</p>
 <p><strong>Git verziókezelő használata, Git-flow kialakítása (max. 25 pont):</strong><br />
-- main, dev, feature branchek legalább 5 committal és egy merge-el</p>
+- main, dev, feature branchek legalább 5 committal és egy merge-el<br />
+- Screenshot hozzáadva a repo Readme-jéhez a commitokról</p>
 <p><strong>Github Actions konfiguráció és futtatás (max. 25 pont):</strong><br />
-- legalább 1 sikeres build </p>
+- Legalább 1 sikeres build<br />
+- Screenshot hozzáadva a repo Readme-jéhez a sikeres buildről</p>
 </div>
 
     <hr>
@@ -585,8 +722,8 @@ Példaalkalmazások követendő architektúrával:<br />
           </path>
         </svg>
       </span>
-      <span title="2024. március 22. 11:38:59">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-03-22T11:38:59+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-22</span>
+      <span title="2024. március 24. 20:36:13">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-03-24T20:36:13+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-24</span>
       </span>
     </span>
 
