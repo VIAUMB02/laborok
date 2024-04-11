@@ -11,6 +11,8 @@
       
       
       
+        <link rel="prev" href="../A02/">
+      
       
       <link rel="icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
@@ -224,13 +226,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../A01/" class="md-tabs__link">
+      <a href="../A01/" class="md-tabs__link md-tabs__link--active">
         Android Laborok
       </a>
     </li>
@@ -391,14 +395,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
@@ -407,7 +413,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Android Laborok
@@ -437,6 +443,30 @@
       <a href="../A02/" class="md-nav__link">
         Android 2 - Architektúra és környezet
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Android 3 - Hálózat és adatbázis
+      </a>
+      
     </li>
   
 
@@ -488,13 +518,13 @@
 <h1 id="frissites-alatt-nem-vegleges-verzio">FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ<a class="headerlink" href="#frissites-alatt-nem-vegleges-verzio" title="Permanent link">&para;</a></h1>
 <div class="admonition danger">
 <p class="admonition-title">HATÁRIDŐ</p>
-<p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.04.07. 23:59</strong><br />
+<p>A labor beadásának határideje (Githubon Pull Request nyitás + assign): <strong>2024.04.28. 23:59</strong><br />
 Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)</p>
 </div>
 <h2 id="celkituzes">Célkitűzés<a class="headerlink" href="#celkituzes" title="Permanent link">&para;</a></h2>
 <p>A labor elején a hálózati kommunikáció megtervezése (kapcsolódó API hívások definiálása) a feladat. </p>
-<p>Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz.</p>
-<p>A hálózati hívások elkészítése után az ORM réteg implementálása. </p>
+<p>Ezt követően, erre épülve, a cél a hálózati hívások implementálása (opcionálisan kódgenerátor felhasználásával), ezek megfelelő bekötése az repositorykhoz, preferáltan Retrofit kliens segítségével.</p>
+<p>A hálózati hívások elkészítése után a következő feladat az ORM réteg implementálása, erre a Room a preferált technológia.</p>
 <h2 id="elokeszuletek">Előkészületek<a class="headerlink" href="#elokeszuletek" title="Permanent link">&para;</a></h2>
 <p>A feladatok megoldása során ne felejtsd el követni a <a href="../../tudnivalok/github/GitHub/">feladat beadás folyamatát</a>.</p>
 <h3 id="git-repository-hasznalata">Git repository használata<a class="headerlink" href="#git-repository-hasznalata" title="Permanent link">&para;</a></h3>
@@ -503,21 +533,31 @@ Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), 
 <p>Az első labor során létrehozott repository-ban dolgozz.</p>
 </li>
 <li>
-<p>A labor végén a dev branchről nyiss egy PR-t a main-re.</p>
+<p>A labor végén egy release branchről nyiss egy PR-t a main-re.</p>
 </li>
 </ol>
 <h2 id="elofeltetelek">Előfeltételek<a class="headerlink" href="#elofeltetelek" title="Permanent link">&para;</a></h2>
 <p>A labor elvégzéséhez szükséges eszközök: </p>
 <ul>
 <li>Android Studio</li>
-<li>Swagger Editor</li>
 </ul>
-<p>A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése </p>
+<p>Amit érdemes átnézni:  </p>
+<ul>
+<li>Mobilszoftver Rendszerek tantárgy előadásainak kapcsolódó anyaga</li>
+<li>Room dokumentáció  </li>
+<li>Retrofit dokumentáció  </li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">ELVÁRT EREDMÉNYEK - BEADANDÓ</p>
-<p>Hálózati hívások API leírása (.yaml leírás, max. 20 pont)  </p>
-<p>Hálózati réteg elkészítése (projekt .zip, max. 40 pont)  </p>
-<p>ORM adatréteg elkészítése (projekt .zip, max. 40 pont)  </p>
+<p><strong>Hálózati hívások API leírása (.yaml leírás, max. 20 pont)</strong>  </p>
+<p><strong>Hálózati réteg elkészítése (max. 40 pont)</strong>:<br />
+- Model, API Service és Retrofit osztályok elkészítése/inicializációja<br />
+- Repositoryk létrehozása, hálózati hívások bekötése<br />
+- DI keretrendszer használata fenti lépések elvégzéséhez  </p>
+<p><strong>ORM adatréteg elkészítése (max. 40 pont)</strong>:<br />
+- Entity, DAO, Database osztályok elkészítése/inicializációja<br />
+- Repositoryk létrehozása, adatműveletek bekötése<br />
+- DI keretrendszer használata fenti lépések elvégzéséhez  </p>
 </div>
 
     <hr>
@@ -529,8 +569,8 @@ Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), 
           </path>
         </svg>
       </span>
-      <span title="2024. március 22. 11:38:59">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-03-22T11:38:59+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-03-22</span>
+      <span title="2024. április 11. 10:27:55">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-04-11T10:27:55+02:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-04-11</span>
       </span>
     </span>
 
