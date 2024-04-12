@@ -1,7 +1,5 @@
 # Android 3 - Hálózat és adatbázis
 
-# FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ
-
 !!!danger "HATÁRIDŐ"
 	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.04.28. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
