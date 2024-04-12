@@ -14,6 +14,8 @@ Ezt követően, erre épülve, a cél a hálózati hívások implementálása (o
 
 A hálózati hívások elkészítése után a következő feladat az ORM réteg implementálása, erre a Room a preferált technológia.
 
+Az elvégzett munkát dokumentálni is szükséges a repo Readmejében.
+
 ## Előkészületek
 
 A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyamatát](../../tudnivalok/github/GitHub.md).
@@ -44,8 +46,10 @@ Amit érdemes átnézni:
     - Model, API Service és Retrofit osztályok elkészítése/inicializációja  
     - Repositoryk létrehozása, hálózati hívások bekötése  
     - DI keretrendszer használata fenti lépések elvégzéséhez  
+    - Dokumentáció: Melyik osztályokat hoztad létre és mik a felelősségeik?  
 
     **ORM adatréteg elkészítése (max. 40 pont)**:  
     - Entity, DAO, Database osztályok elkészítése/inicializációja  
     - Repositoryk létrehozása, adatműveletek bekötése  
     - DI keretrendszer használata fenti lépések elvégzéséhez  
+    - Dokumentáció: Melyik osztályokat hoztad létre és mik a felelősségeik?  
