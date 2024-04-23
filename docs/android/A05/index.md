@@ -3,14 +3,14 @@
 # FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.??.??. 23:59**  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.05.26. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
 
 ## Célkitűzés
 
-Jelen labor célja, hogy az előző laborok során elkészült alkalmazást ellátsuk, mind Google Analytics, mind Crashlytics (Fabric) analitikai és crash report megoldásokkal. 
+Jelen labor célja, hogy az előző laborok során elkészült alkalmazást ellásuk Google Analytics és Crashlytics analitikai és crash report megoldásokkal, a Firebase BaaS szolgáltatásait használva. 
 
-Cél, továbbá az előző labor végén elkészült hálózati és adatbázis réteget tesztelését elősegítő mock hálózati réteg elkészítése, majd a hálózati hívások és adatbázis réteg Unit tesztelése.  
+Cél továbbá az előző labor végén elkészült alkalmazás Unit tesztelése.  
 
 Tekintettel a laborok során kapott visszajelzésekre, korrekciókra, valamint az eltérő komplexitású feladatokból fakadó fejlesztési időkre, a UI tesztelés feladata opcionális, viszont a feladatra kapott pontok plusz pontként számítanak.
 
@@ -29,17 +29,20 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 
 A labor elvégzéséhez szükséges eszközök: 
 
-- Android Studio
-- Google Play Console 
+- Android Studio  
+- Firebase Console
 
-A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése 
+Amit érdemes átnézni: 
+
+- Mobilszoftver Rendszerek tantárgy előadásainak kapcsolódó anyaga  
+- Firebase dokumentáciő (https://firebase.google.com/docs/android/setup#assistant)
 
 !!!example "ELVÁRT EREDMÉNYEK - BEADANDÓ" 
 
-    Google Analytics integráció (screenshot az eseményekről a kontrol panelen, max. 25 pont)  
+    **Google Analytics integráció (screenshot az eseményekről a kontrol panelen, max. 25 pont)**  
 
-    Crashlytics integráció (screenshot az összeomlásokról a kontrol panelen, max. 25 pont)
+    **Crashlytics integráció (screenshot az összeomlásokról a kontrol panelen, max. 25 pont)**  
 
-    Kapcsolódó Unit tesztek (lehetőleg minden funkcionalitást fedjen le, ne csak a hálózati hívásokat, mind sikeresen fusson le, max. 50 pont)    
+    **Kapcsolódó Unit tesztek (legalább 10 db., screenshot a sikeres futásokról, max. 50 pont)**    
 
-    Espresso UI tesztek, lehetőleg a legtöbb funkcionalitást lefedve (az összes teszt fusson le, max. +50 pont)  
+    **Espresso UI tesztek, lehetőleg a legtöbb funkcionalitást lefedve (legalább 5 db., screenshot a sikeres futásokról,max. +50 pont)**  

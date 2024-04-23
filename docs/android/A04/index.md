@@ -35,8 +35,10 @@ A labor elvégzéséhez szükséges eszközök:
 
 - Android Studio
 
-A Mobilszoftver Rendszerek tárgy előadásainak folyamatos követése 
+Amit érdemes átnézni: 
+
+- Mobilszoftver Rendszerek tantárgy előadásainak kapcsolódó anyaga  
 
 !!!example "ELVÁRT EREDMÉNYEK - BEADANDÓ" 
 
-    Elkészült alkalmazás felület és működés (max. 100 pont)  
+    **Elkészült alkalmazás felület és működés (max. 100 pont)**  
