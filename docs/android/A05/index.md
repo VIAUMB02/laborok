@@ -14,6 +14,15 @@ Cél továbbá az előző labor végén elkészült alkalmazás Unit tesztelése
 
 Tekintettel a laborok során kapott visszajelzésekre, korrekciókra, valamint az eltérő komplexitású feladatokból fakadó fejlesztési időkre, a UI tesztelés feladata opcionális, viszont a feladatra kapott pontok plusz pontként számítanak.
 
+## Előkészületek
+
+A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyamatát](../../tudnivalok/github/GitHub.md).
+
+### Git repository használata
+
+1. Az első labor során létrehozott repository-ban dolgozz.
+
+2. A labor végén egy release branchről nyiss egy PR-t a main-re.
 
 ## Előkészületek
 
