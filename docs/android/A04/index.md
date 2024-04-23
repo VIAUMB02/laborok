@@ -3,7 +3,7 @@
 # FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.04.21. 23:59**  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.05.12. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
 
 ## Célkitűzés
@@ -15,6 +15,8 @@ Jelen labor célja, hogy az előző laborok során elkészült megoldásra épü
 - Elvárt elrendezés és viselkedés 
 
 Fontos, hogy a felületet ne bonyolítsuk túl, nem feltétlenül szükséges a legváltozatosabb betűtípusok és animációk használata, valamint elegendő egy készülék típus (telefon vagy tablet, de több felbontás) és egy orientáció (álló vagy fekvő) támogatása. Fontos, hogy a labor végére egy funkcionálisan megfelelően működő és megjelenő alkalmazást kapjunk. 
+
+A felhasználó felület továbbra is Jetpack Compose keretrendszer használatával kell, hogy készüljön.
 
 
 ## Előkészületek
