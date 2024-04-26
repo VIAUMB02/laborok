@@ -16,7 +16,7 @@ Fontos, hogy a felületet ne bonyolítsuk túl, nem feltétlenül szükséges a 
 
 A felhasználó felület továbbra is Jetpack Compose keretrendszer használatával kell, hogy készüljön.
 
-További feladat egy 3-5 perces hangalámondásos képernyővideó elkészítése és feltöltése, amelyben Kb. 2 perc az app működés közbeni bemutatása (emulátoron vagy rendes készüléken) a teljes funkcionalitás bemutatásával indítástól kilépésig, illetve kb. 2 perc az üzleti logika és a felület kódjának ismertetése.
+További feladat egy 3-5 perces hangalámondásos képernyővideó elkészítése, amelyben kb. 2 perc az app működés közbeni bemutatása (emulátoron vagy rendes készüléken) a teljes funkcionalitást lefedve indítástól kilépésig, illetve kb. 2 perc az üzleti logika és a felület kódjának ismertetése.
 A videó linkjét a Readme-ben szükséges elhelyezni.
 
 
