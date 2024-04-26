@@ -1,7 +1,5 @@
 # Android 4 - Felület és üzleti logika
 
-# FRISSÍTÉS ALATT - NEM VÉGLEGES VERZIÓ
-
 !!!danger "HATÁRIDŐ"
 	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.05.12. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
@@ -18,6 +16,9 @@ Fontos, hogy a felületet ne bonyolítsuk túl, nem feltétlenül szükséges a 
 
 A felhasználó felület továbbra is Jetpack Compose keretrendszer használatával kell, hogy készüljön.
 
+További feladat egy 3-5 perces hangalámondásos képernyővideó elkészítése és feltöltése, amelyben Kb. 2 perc az app működés közbeni bemutatása (emulátoron vagy rendes készüléken) a teljes funkcionalitás bemutatásával indítástól kilépésig, illetve kb. 2 perc az üzleti logika és a felület kódjának ismertetése.
+A videó linkjét a Readme-ben szükséges elhelyezni.
+
 
 ## Előkészületek
 
@@ -27,7 +28,7 @@ A feladatok megoldása során ne felejtsd el követni a [feladat beadás folyama
 
 1. Az első labor során létrehozott repository-ban dolgozz.
 
-2. A labor végén a dev branchről nyiss egy PR-t a main-re.
+2. A labor végén egy release branchről nyiss egy PR-t a main-re.
 
 ## Előfeltételek 
 
@@ -41,4 +42,4 @@ Amit érdemes átnézni:
 
 !!!example "ELVÁRT EREDMÉNYEK - BEADANDÓ" 
 
-    **Elkészült alkalmazás felület és működés (max. 100 pont)**  
+    **Elkészült alkalmazás felület és működés, videóban bemutatva (max. 100 pont)**  
