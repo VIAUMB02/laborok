@@ -58,4 +58,4 @@ Amit érdemes átnézni:
 
     **Kapcsolódó Unit tesztek (legalább 10 db., screenshot a sikeres futásokról, teszt stratégia dokumentációja Readme fájlban, max. 50 pont)**    
 
-    **Espresso UI tesztek, lehetőleg a legtöbb funkcionalitást lefedve (legalább 5 db., screenshot a sikeres futásokról, teszt stratégia dokumentációja Readme fájlban, max. +50 pont)**  
+    **Compose/Espresso UI tesztek, lehetőleg a legtöbb funkcionalitást lefedve (legalább 5 db., screenshot a sikeres futásokról, teszt stratégia dokumentációja Readme fájlban, max. +50 pont)**  
