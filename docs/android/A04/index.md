@@ -1,7 +1,7 @@
 # Android 4 - Felület és üzleti logika
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2024.05.12. 23:59**  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2025.05.11. 23:59**  
     Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
 
 ## Célkitűzés
