@@ -2,7 +2,7 @@
 
 !!!danger "HATÁRIDŐ"
 	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2025.05.25. 23:59**  
-    Labvez Github userek: AttilaHideg (Hideg Attila), kpomazi (Pomázi Krisztián), siktdavid (Sik Dávid)
+    Labvez Github userek: gazdilaci (Gazdi László), AttilaHideg (Hideg Attila), siktdavid (Sik Dávid)
 
 ## Célkitűzés
 
