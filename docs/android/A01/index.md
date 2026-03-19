@@ -18,7 +18,7 @@ A labor során a jelölt saját ötlet alapján fejleszthet alkalmazást, de a l
 
 Az ötlettel szemben támasztott követelmények: 
 
-- Legalább 3 képernyős bonyolultság. Például egy lista/rács nézettel, egy részletes nézet, egy pedig egy logikát nem tartalmazó „About” nézet, 
+- Legalább 4 képernyős bonyolultság. Például egy lista/rács nézet, egy részletes nézet, egy beállítások nézet, egy pedig egy logikát nem tartalmazó „About” nézet, 
 - szerver oldali adaforrás feltételezése (REST API tervezéshez), minimálisan GET művelethez, 
 - offline működés támogatása lokális adatbázis segítségével. 
 
