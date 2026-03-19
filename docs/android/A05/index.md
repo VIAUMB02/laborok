@@ -1,7 +1,7 @@
 # Android 5 - Tesztek és analitika
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2025.05.25. 23:59**  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2026.05.31. 23:59**  
     Labvez Github userek: gazdilaci (Gazdi László), AttilaHideg (Hideg Attila), siktdavid (Sik Dávid)
 
 ## Célkitűzés

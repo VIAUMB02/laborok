@@ -1,7 +1,7 @@
 # Android 1 - Specifikáció
 
 !!!danger "HATÁRIDŐ"
-	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2025.03.23. 23:59**  
+	A labor beadásának határideje (Githubon Pull Request nyitás + assign): **2026.04.05. 23:59**  
     Labvez Github userek: gazdilaci (Gazdi László), AttilaHideg (Hideg Attila), siktdavid (Sik Dávid)
 
 ## Bevezetés
