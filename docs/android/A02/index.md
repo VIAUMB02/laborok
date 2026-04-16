@@ -19,40 +19,45 @@ https://github.com/skydoves/DisneyCompose
 
 ??? info "Skeleton példa"
 
-    Az itt bemutatott struktúra nem tartalmaz minden szükséges osztályt, csak egy lehetséges hierarchiát kíván szemléltetni.
+    Az itt bemutatott struktúra nem tartalmaz minden szükséges osztályt, és nem az egyetlen jó megoldás, csak egy lehetséges hierarchiát kíván szemléltetni.
 
         - data
-            - dao
-                - ... (Room DAO-k)
-            - datasource
-                - ... (repositoryk)
-            - di
-                - ... (Hilt modulok)
-            - entities
-                - ... (Room entitások)
-            - TodoDatabase.kt
+		    -local
+                - dao
+                    - ... (Room DAO-k)
+                - datasource
+                    - ... (repository-k)
+                - di
+                    - ... (Hilt modulok)
+                - entities
+                    - ... (Room entitások)
+                - TodoDatabase.kt
+			- network
+                - ... (hálózati réteg)
         - domain
-            - ...
-        - feature
-            - todo_list
-                - TodoListScreen.kt
-                - TodoListViewModel.kt
-            - todo_details
-                - TodoDetailsScreen.kt
-                - TodoDetailsViewModel.kt
-            - todo_create
-                - TodoCreateScreen.kt
-                - TodoCreateViewModel.kt
-        - navigation
-            - NavGraph.kt
-            - Screen.kt
-        - network
-            - ... (hálózati réteg)
+		    - di
+			    - ... (Hilt modulok)
+            - model
+			    - ... (domain model osztályok)
+			- usecases
         - ui
             - common   
                 - ... (több helyen használt Composable-k)
             - model
                 - ... (UI model osztályok)
+			- navigation
+                - AppNavigation.kt
+                - Screen.kt
+			- screen
+                - todo_list
+                    - TodoListScreen.kt
+                    - TodoListViewModel.kt
+                - todo_details
+                    - TodoDetailsScreen.kt
+                    - TodoDetailsViewModel.kt
+                - todo_create
+                    - TodoCreateScreen.kt
+                    - TodoCreateViewModel.kt
             - theme 
                 - ... (generált téma Kotlin fájlok)
             - util
