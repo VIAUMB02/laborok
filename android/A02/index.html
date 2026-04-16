@@ -659,39 +659,44 @@ Példaalkalmazások megfelelő architektúrával:<br>
 <a href="https://github.com/skydoves/DisneyCompose">https://github.com/skydoves/DisneyCompose</a></p>
 <details class="info">
 <summary>Skeleton példa</summary>
-<p>Az itt bemutatott struktúra nem tartalmaz minden szükséges osztályt, csak egy lehetséges hierarchiát kíván szemléltetni.</p>
+<p>Az itt bemutatott struktúra nem tartalmaz minden szükséges osztályt, és nem az egyetlen jó megoldás, csak egy lehetséges hierarchiát kíván szemléltetni.</p>
 <div class="highlight"><pre><span></span><code>- data
-    - dao
-        - ... (Room DAO-k)
-    - datasource
-        - ... (repositoryk)
+    -local
+        - dao
+            - ... (Room DAO-k)
+        - datasource
+            - ... (repository-k)
+        - di
+            - ... (Hilt modulok)
+        - entities
+            - ... (Room entitások)
+        - TodoDatabase.kt
+    - network
+        - ... (hálózati réteg)
+- domain
     - di
         - ... (Hilt modulok)
-    - entities
-        - ... (Room entitások)
-    - TodoDatabase.kt
-- domain
-    - ...
-- feature
-    - todo_list
-        - TodoListScreen.kt
-        - TodoListViewModel.kt
-    - todo_details
-        - TodoDetailsScreen.kt
-        - TodoDetailsViewModel.kt
-    - todo_create
-        - TodoCreateScreen.kt
-        - TodoCreateViewModel.kt
-- navigation
-    - NavGraph.kt
-    - Screen.kt
-- network
-    - ... (hálózati réteg)
+    - model
+        - ... (domain model osztályok)
+    - usecases
 - ui
     - common   
         - ... (több helyen használt Composable-k)
     - model
         - ... (UI model osztályok)
+    - navigation
+        - AppNavigation.kt
+        - Screen.kt
+    - screen
+        - todo_list
+            - TodoListScreen.kt
+            - TodoListViewModel.kt
+        - todo_details
+            - TodoDetailsScreen.kt
+            - TodoDetailsViewModel.kt
+        - todo_create
+            - TodoCreateScreen.kt
+            - TodoCreateViewModel.kt
     - theme 
         - ... (generált téma Kotlin fájlok)
     - util
@@ -762,8 +767,8 @@ Példaalkalmazások megfelelő architektúrával:<br>
           </path>
         </svg>
       </span>
-      <span title="2026. március 19. 17:54:08">
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2026. március 19. 17:54:08 CET"><span class="timeago" datetime="2026-03-19T17:54:08+01:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026. március 19. 17:54:08 CET">2026-03-19</span>
+      <span title="2026. április 16. 14:59:46">
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2026. április 16. 14:59:46 CEST"><span class="timeago" datetime="2026-04-16T14:59:46+02:00" locale="hu"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2026. április 16. 14:59:46 CEST">2026-04-16</span>
       </span>
     </span>
 
@@ -779,10 +784,10 @@ Példaalkalmazások megfelelő architektúrával:<br>
       <span>Szerzők</span>
       <nav><a href="https://github.com/gazdilaci" target="_blank" rel="noopener noreferrer" class="md-author" title="@gazdilaci">
           <img src="https://avatars.githubusercontent.com/u/23335752?v=4?size=72" alt="@gazdilaci">
-        </a><a href="https://github.com/kpomazi" target="_blank" rel="noopener noreferrer" class="md-author" title="@kpomazi">
-          <img src="https://avatars.githubusercontent.com/u/22079595?v=4?size=72" alt="@kpomazi">
         </a><a href="https://github.com/web-flow" target="_blank" rel="noopener noreferrer" class="md-author" title="@web-flow">
           <img src="https://avatars.githubusercontent.com/u/19864447?v=4?size=72" alt="@web-flow">
+        </a><a href="https://github.com/kpomazi" target="_blank" rel="noopener noreferrer" class="md-author" title="@kpomazi">
+          <img src="https://avatars.githubusercontent.com/u/22079595?v=4?size=72" alt="@kpomazi">
         </a></nav>      
     </span>
   </div>
